@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
+/* *{
+    font-family: 'Roboto',sans-serif;
+} */
+body{
+    font-size: 62.5%;
+}
+
+
+svg{
+    height: 60px;
+    width: 60px;
+}
+/*Selectores*/
+.texto-tipografia2{
+    font-family: 'Permanent Marker',sans-serif;
+    font-size: 1rem;
+}
+.texto-lobster{
+    /*font-family: 'Permanent Marker',sans-serif;*/
+    font-family: 'Lobster',sans-serif;
+   
+}
+
+
