@@ -43,3 +43,81 @@ nav div a img{
     display: block;
     margin: auto;
   }
+
+
+
+
+
+
+  /*==============================GRIDS ===========================*/
+
+/*Definimos que nuestro contenedor se muestre como GRID */
+.grid{
+	width:99%;
+	display: grid;
+}
+
+/*Definimos nuestro templates por áreas --- 3 cols - 3 rows - areas*/
+.template-areas{
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 100px 400px 150px;
+	grid-template-areas:
+	"celda1 celda3 celda5"  
+	"celda1 celda4 celda5" 
+	"celda2 celda4 celda5";
+}
+
+#celda3{
+	grid-area: celda3;
+}
+
+#celda5{
+	grid-area: celda5;
+}
+
+#celda1{
+	grid-area: celda1;
+}
+
+#celda2{
+	grid-area: celda2;
+}
+#celda4{
+	grid-area: celda4;
+}
+/*Posición de los elementos */
+.justify-items{
+	justify-items: center;
+}
+
+.align-items{
+	align-items: center;
+}
+
+
+.esquina-redonda{
+	border-radius: 1rem;
+}
+
+.bg-test{
+	border-color: red;
+	border-width: 2rem;
+	border-radius: 1rem;
+	border: dotted 1px deeppink;
+}
+.bg-grey{
+	background-color: grey;
+	}
+.bg-yellow{
+    background-color: yellow;
+    }
+.bg-blue{
+    background-color: blue;
+    }
+.bg-blue2{
+    background-color: rgb(20, 198, 221);
+    }
+.bg-red{
+    background-color: rgb(165, 10, 10);
+    }    
+/*Posición del contenido */
