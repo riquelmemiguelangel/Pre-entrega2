@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
-/*Selectores*/
-*{
-    font-family: 'Roboto',sans-serif;
+/*      Selectores      */
+*{    font-family: 'Roboto',sans-serif;
 } 
 /* SELECTORES DE ETIQUETAS */
 body{
     font-size: 62.5%;
+}
+header{
+    margin: 0 auto;
+}
+header img{
+    width: 100%;
 }
 svg{
     height: 60px;
@@ -29,6 +34,7 @@ nav div a img{
 }
 .pie{
     background-color: rgb(88, 208, 230);
+    padding: 20px;
 }
 .texto-centrado{
     text-align:center;
@@ -46,17 +52,13 @@ nav div a img{
 
 
 
-
-
-
   /*==============================GRIDS ===========================*/
 
-/*Definimos que nuestro contenedor se muestre como GRID */
+/*Definimos contenedor como GRID */
 .grid{
 	width:99%;
 	display: grid;
 }
-
 /*Definimos nuestro templates por áreas --- 3 cols - 3 rows - areas*/
 .template-areas{
 	grid-template-columns: repeat(3,1fr);
@@ -117,7 +119,85 @@ nav div a img{
 .bg-blue2{
     background-color: rgb(20, 198, 221);
     }
-.bg-red{
-    background-color: rgb(165, 10, 10);
+.bg-celda2{
+    background-color: rgb(226, 120, 178);
     }    
-/*Posición del contenido */
+
+
+/* nueva grilla productos*/
+.productos{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos figure{
+    width: 30%;
+    border-radius: 4px;
+    border: solid gray 1px;
+    margin-bottom: 20px;
+}
+
+    .productos figure p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .productos figure img{
+        width: 100%;
+    }
+
+    .productos figure figcaption{
+        color: rgb(34, 150, 69);
+        font-size: 2.3rem;
+        margin-top: 10px;
+    }
+
+    .productos figure button{
+        border: solid;
+        background-color: rgb(58, 56, 148);
+        color: white;
+        border-radius: 8px;
+        padding:10px ;
+        margin-bottom: 20px;
+    }
+
+
+/*      media queries       */
+@media (width < 768px){
+    .template-areas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "celda1" 
+        "celda2" 
+        "celda3"
+        "celda4" 
+        "celda5";
+    }
+    svg{
+        height: 30px;
+        width: 30px;
+    }
+    /* productos */
+    .productos figure{
+        width: 100%;
+    }
+    .productos figure img{
+        width: 300px;
+    }
+    .productos p{
+        padding: 20px;
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+    /*      Nosotros breakpoint      */
+    .div img{
+        margin: 0;
+        width: 100%;
+    }
+}
