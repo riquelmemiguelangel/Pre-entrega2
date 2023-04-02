@@ -1,2 +1,4 @@
 *.ai
 node_modules/
+*.log
+*.vsc
